@@ -1,0 +1,5 @@
+package com.sinc.framework.model.sql;
+
+public interface Dao {
+
+}

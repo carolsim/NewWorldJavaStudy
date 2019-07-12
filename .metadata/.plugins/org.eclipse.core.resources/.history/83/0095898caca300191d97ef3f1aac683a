@@ -1,0 +1,22 @@
+import org.json.JSONObject;
+
+import com.sinc.test.model.vo.TestDTO;
+
+public class JsonMain {
+
+	public static void main(String[] args) {
+		//jsonObj();
+		jsonList();
+	}
+	public static void jsonObj() {
+		TestDTO dto = new TestDTO("jssim","jssim");
+		JSONObject jObj = new JSONObject(dto);
+		System.out.println(jObj.toString());
+	}
+	public static void jsonList() {
+		TestDTO dto = new TestDTO("jssim","jssim");
+		JSONObject jObj = new JSONObject(dto);
+		System.out.println(jObj.toString());
+	}
+
+}

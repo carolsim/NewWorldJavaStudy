@@ -1,0 +1,28 @@
+package com.sinc.framework.ctrl;
+
+import java.util.List;
+
+import com.sinc.framework.service.OopService;
+import com.sinc.framework.service.OopServiceImpl;
+import com.sinc.oop.sup.model.vo.PersonVO;
+
+public class DeleteCtrl implements Controller {
+	
+	private OopService service;
+	public DeleteCtrl() {
+		service = new OopServiceImpl();
+	}
+	
+	@Override
+	public List<PersonVO> execute() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object execute(Object obj) {
+		System.out.println("ctrl execute");
+		return null;
+	}
+
+}

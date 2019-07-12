@@ -1,0 +1,13 @@
+package com.sinc.framework.front.ctrl;
+
+import com.sinc.framework.ctrl.Controller;
+import com.sinc.framework.factory.BeanFactory;
+
+public class FrontCtrl {
+	
+	public void requestProc(String action) {
+		BeanFactory factory = BeanFactory.getInstance();
+		Controller ctrl = factory.getCtrl(action);//getCtrl에 매핑되는 키값(insert,select....)를 넘겨준다.
+		ctrl.execute();
+	}
+}

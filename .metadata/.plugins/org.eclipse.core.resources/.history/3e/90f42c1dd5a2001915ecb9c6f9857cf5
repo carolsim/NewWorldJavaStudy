@@ -1,0 +1,28 @@
+package com.sinc.test.model.sql;
+
+import com.sinc.test.model.vo.TestDTO;
+import com.sinc.test.model.vo.TestVO;
+
+public class TestDaoImpl implements TestDao {
+	
+	public static final String DRIVER ="oracle.jdbc.driver.OracleDriver";//package이름 + 맨뒤에는 클래스 이름
+	public static final String URL = "jdbc:oracle:thin:@127.0.0.1:1521:xe";//오라클 기본 포트이름은 1521임. xe는 디비의 sid
+	public static final String USER= "hr";
+	public static final String PASSWORD="hr";
+	
+	public TestDaoImpl() {
+		try {
+			Class.forName(DRIVER);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public TestVO selectedRow(TestDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

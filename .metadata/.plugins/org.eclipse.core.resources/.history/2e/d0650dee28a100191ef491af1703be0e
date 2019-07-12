@@ -1,0 +1,5 @@
+package com.sinc.framework.service;
+
+public interface OopService {
+
+}

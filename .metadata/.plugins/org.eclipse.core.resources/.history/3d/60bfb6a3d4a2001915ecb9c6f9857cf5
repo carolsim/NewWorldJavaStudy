@@ -1,0 +1,5 @@
+package com.sinc.test.model.sql;
+
+public class TestDaoImpl {
+
+}

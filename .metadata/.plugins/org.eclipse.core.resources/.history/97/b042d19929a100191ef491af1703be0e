@@ -1,0 +1,18 @@
+package com.sinc.framework.service;
+
+import java.util.List;
+
+public interface OopService {
+	/*메서드의 유형을 지정해줌*/
+	
+	public void setAry(Object obj);
+	public List<Object> getAry();
+	
+	public Object search(Object name);
+	public Object delete(Object name);
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 비동기통신 -->
+	<button id="ajaxBtn">AjaxBtn</button>
+	<a href="">ajaxLink</a>
+	
+	
+	<!-- script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log(${scriptObj});
+			obj = ${scriptObj};
+			console.log(obj.id);
+			console.log(obj.pwd);
+		});
+		$("#ajaxBtn").click(function(){
+			/*디폴트로 내려받는 타입을 json이라고 생각을 한다.*/
+			$.ajax({
+				url  : "./ajaxCtrl",//.do는 응답이기 때문에 이 이름으로 매핑되는 새 이름을 만드는거임
+				type : "post",
+				//data : {maker: $("#maker"),val()},
+				dataType : "json",
+				success : function(obj){
+					alert(obj);
+				}
+				
+			});//jQuery가 갖고있는 ajax함수
+		});
+	</script>
+</body>
+</html>

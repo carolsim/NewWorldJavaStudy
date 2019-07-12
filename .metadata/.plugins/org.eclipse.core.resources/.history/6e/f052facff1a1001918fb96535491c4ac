@@ -1,0 +1,13 @@
+package com.sinc.thread;
+
+public class PrtThread implements Runnable {
+
+	
+	
+	@Override
+	public void run() {
+		
+		
+	}
+
+}

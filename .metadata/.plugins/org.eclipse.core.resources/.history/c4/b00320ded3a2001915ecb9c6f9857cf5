@@ -1,0 +1,16 @@
+package com.sinc.test.service;
+
+import com.sinc.test.model.vo.TestDTO;
+import com.sinc.test.model.vo.TestVO;
+
+public class TestServiceImpl implements TestService {
+	
+	
+	
+	@Override
+	public TestVO select(TestDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

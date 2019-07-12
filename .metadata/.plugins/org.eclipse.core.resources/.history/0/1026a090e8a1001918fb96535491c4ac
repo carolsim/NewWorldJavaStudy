@@ -1,0 +1,13 @@
+package com.sinc.stream;
+
+public class StreamObj {
+	
+	public void saveToFile() {
+		
+	}
+	
+	public void loadToFile() {
+		
+	}
+	
+}

@@ -1,0 +1,26 @@
+package com.sinc.framework.factory;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.sinc.framework.ctrl.Controller;
+import com.sinc.framework.ctrl.InsertCtrl;
+
+public class BeanFactory {
+	private static BeanFactory instance;
+	private Map<String, Controller> map;
+	
+	private BeanFactory() {
+		map = new HashMap<>();
+		map.put("insert", new InsertCtrl());
+	}
+	public static BeanFactory getInstance() {
+		if(instance==null) {
+			instance = new BeanFactory();
+		}
+		return instance;
+	}
+	public Controller getCtrl() {
+		return null;
+	}
+}

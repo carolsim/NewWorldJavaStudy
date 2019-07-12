@@ -1,0 +1,5 @@
+package com.sinc.test.model.vo;
+
+public class TestDTO {
+
+}

@@ -1,0 +1,11 @@
+import com.sinc.thread.PrintThread;
+
+public class ThreadMain {
+
+	public static void main(String[] args) {
+		System.out.println("main start");
+		PrintThread runnable = new PrintThread();
+		System.out.println("main end");
+	}
+
+}

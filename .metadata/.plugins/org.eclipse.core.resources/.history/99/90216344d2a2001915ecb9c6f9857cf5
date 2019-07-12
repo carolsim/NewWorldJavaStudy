@@ -1,0 +1,33 @@
+package com.sinc.test.ctrl;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sinc.ctrl.command.Controller;
+import com.sinc.front.view.View;
+
+public class TestCtrl implements Controller {
+
+	@Override
+	public View execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("TestCtrl execute");
+		View view = new View();
+		/*
+		if(false) {
+			view.setPath("success.jsp"); view.setSend(true);
+		}else {
+			request.setAttribute("msg", "짱!!~섭섭님");
+			view.setPath("error.jsp"); view.setSend(false);
+		}
+		*/
+		
+		String id=request.getParameter("id");
+		String pwd=request.getParameter("pwd");
+		System.out.println("param id:"+id+", param pwd: "+pwd);
+		return view;
+	}
+	
+}

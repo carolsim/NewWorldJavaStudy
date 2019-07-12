@@ -1,0 +1,5 @@
+package com.sinc.test.ctrl;
+
+abstract class TestCtrl {
+
+}

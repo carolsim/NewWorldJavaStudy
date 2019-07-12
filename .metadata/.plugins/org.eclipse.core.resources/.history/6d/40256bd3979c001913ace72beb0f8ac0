@@ -1,0 +1,18 @@
+import test.model.str.StringBiz;
+
+public class StringMain {
+	//멤버변수 섹션
+	//private StringBiz biz;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//biz = new StringBiz(); // biz는 로컬변수인데 스태틱 변수를 할당하지 못한다.
+		StringBiz biz = new StringBiz();
+		//String str01 ="jslim", str02="jslim"; //둘이 같다고 나온다.... (둘이 주소가 같음) 
+		String str01 = new String("jslim");
+		String str02 = new String("jslim");//요렇게 할 시에 둘이 다르다고 나온다.....!
+		System.out.println("Result: "+ biz.compareStr(str01,str02));//참조하는 주소번지(둘이 다름)을 비교해서 반환하기때문에 다르다고 나온다.
+		//==오퍼레이터는 주소값을 비교하는 연산자임!
+		
+	}
+
+}

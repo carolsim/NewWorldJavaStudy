@@ -1,0 +1,27 @@
+package com.sinc.test.ajax.ctrl;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.json.JSONObject;
+
+import com.sinc.ctrl.command.Controller;
+import com.sinc.front.view.View;
+import com.sinc.test.model.vo.TestDTO;
+
+public class AjaxCtrl implements Controller {
+
+	@Override
+	public View execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("ajax ctrl");
+		
+		TestDTO dto = new TestDTO("jssim","jssim");
+		JSONObject jObj = new JSONObject(dto);
+		request.setAttribute("scriptObj", jObj.toString());//request에 dto가 아니라 jobj를 심은것
+		return new View("ajaxChart.jsp",true);
+	}
+	
+}
