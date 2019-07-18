@@ -1,7 +1,0 @@
-package com.sinc.test.model.vo;
-
-public class ChartVO {
-	private String year;
-	private int sales, expenses, profit;
-	
-}

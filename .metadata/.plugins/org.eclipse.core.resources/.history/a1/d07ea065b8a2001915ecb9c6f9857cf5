@@ -1,5 +1,0 @@
-package com.sinc.ctrl.command;
-
-public interface Controller {
-
-}

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="each"/>
+		<item key="selection" value="L"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="l"/>
 			<item value="each"/>
 			<item value="imgSel"/>
 			<item value="prop"/>
@@ -15,7 +16,6 @@
 			<item value=".close"/>
 			<item value="avg"/>
 			<item value="UPDATE"/>
-			<item value="ADD"/>
 		</list>
 		<list key="replacehistory">
 			<item value="this.getAvg()"/>
