@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 /*
  * Implement the uniqueNames method. When passed two arrays of names,
  * it will return an array containing the names that appear in either or both arrays.
@@ -11,7 +14,15 @@
 public class MergeNames {
     
     public static String[] uniqueNames(String[] names1, String[] names2) {
-        throw new UnsupportedOperationException("Waiting to be implemented.");
+        Set<String> result = new HashSet<String>();
+        for(String val:names1) {
+        	result.add(val);
+        }
+        for(String val:names2) {
+        	result.add(val);
+        }
+        String[] array = new String[result.size()];
+        return result.toArray(array);
     }
     
     public static void main(String[] args) {
